@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35303.130
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppVaulina", "AppVaulina\AppVaulina.csproj", "{4E96BFD4-6025-4C91-9D84-311675C3FD76}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4E96BFD4-6025-4C91-9D84-311675C3FD76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E96BFD4-6025-4C91-9D84-311675C3FD76}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E96BFD4-6025-4C91-9D84-311675C3FD76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E96BFD4-6025-4C91-9D84-311675C3FD76}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4272802D-0AA3-4FBC-AC2A-15EE00277004}
+	EndGlobalSection
+EndGlobal

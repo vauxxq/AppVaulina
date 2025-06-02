@@ -1,0 +1,35 @@
+﻿<Window x:Class="AppVaulina.Wiindow.SuppliersWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AppVaulina.Wiindow"
+        mc:Ignorable="d"
+       Title="Поставщики" Height="450" Width="800" Background="#0E4A80">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- Панель кнопок вверху -->
+        <StackPanel Orientation="Horizontal" Grid.Row="0">
+            <Button x:Name="btnAdd" Content="Добавить" Click="btnAdd_Click" Margin="5,5,5,5" Padding="10,5"/>
+            <Button x:Name="btnEdit" Content="Изменить" Click="btnEdit_Click" Margin="5,5,5,5" Padding="10,5"/>
+            <Button x:Name="btnExport" Content="Экспорт в CSV" Click="btnExport_Click" Margin="5,5,5,5" Padding="10,5"/>
+            <Button x:Name="btnDelete" Content="Удалить" Click="btnDelete_Click" Margin="5,5,5,5" Padding="10,5"/>
+            <Button x:Name="btnBack" Content="Назад" Click="btnBack_Click" Margin="5,5,5,5" Padding="10,5"/>
+        </StackPanel>
+
+        <!-- DataGrid для отображения поставщиков -->
+        <DataGrid x:Name="dgSuppliers" Grid.Row="1" AutoGenerateColumns="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Номер поставщика" Binding="{Binding SupplierId}" Width="150"/>
+                <DataGridTextColumn Header="Наименование" Binding="{Binding Name}" Width="120"/>
+                <DataGridTextColumn Header="Телефон" Binding="{Binding Phone}" Width="80"/>
+                <DataGridTextColumn Header="Почта" Binding="{Binding Email}" Width="60"/>
+                <DataGridTextColumn Header="Адрес" Binding="{Binding Address}" />
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Window>

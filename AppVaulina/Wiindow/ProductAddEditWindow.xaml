@@ -1,0 +1,30 @@
+﻿<Window x:Class="AppVaulina.Wiindow.ProductAddEditWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AppVaulina.Wiindow"
+        mc:Ignorable="d"
+       Title="Добавить/Изменить товар" Height="500" Width="400" Background=" #0E4A80">
+    <Grid>
+        <StackPanel Orientation="Vertical" Margin="10">
+            <TextBlock Text="Товар" HorizontalAlignment="Center" Margin="0,0,0,10"/>
+            <Label Content="Категория"/>
+            <ComboBox x:Name="cbCategory" DisplayMemberPath="Name"/>
+            <Label Content="Склад"/>
+            <ComboBox x:Name="cbWarehouse" DisplayMemberPath="Location" />
+            <Label Content="Наименование"/>
+            <TextBox x:Name="tbName" />
+            <Label Content="Стоимость"/>
+            <TextBox x:Name="tbCost" />
+            <Label Content="Количество"/>
+            <TextBox x:Name="tbQuantity"/>
+            <Label Content="Описание"/>
+            <TextBox x:Name="tbDescription"/>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,20,0,0">
+                <Button x:Name="btnSave" Content="Сохранить" Click="btnSave_Click" Margin="5"/>
+                <Button x:Name="btnCancel" Content="Отмена" Click="btnCancel_Click" Margin="5"/>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>
